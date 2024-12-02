@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JGadornosApp.MainPage">
+
+    <StackLayout>
+        <Label Text="Ejercicio de App con API JUAN GALLARDO"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+                FontSize="Header"/>
+        <Button Text="Llamar API"
+                Clicked="JGButton_Clicked"
+                HorizontalOptions="Center"/>
+        <ListView x:Name="JGlistView">
+            <ListView.ItemTemplate>
+                  <DataTemplate>
+                    <TextCell Text="{Binding jgname}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+         </ListView>
+    </StackLayout>
+</ContentPage>

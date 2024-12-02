@@ -1,0 +1,36 @@
+﻿@model JGwebTienda.Models.JGadornos
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>JGadornos</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.JGName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.JGName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.JGnavideno)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.JGnavideno)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.JGprice)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.JGprice)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.JGadornosId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

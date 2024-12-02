@@ -1,0 +1,47 @@
+﻿@model IEnumerable<JGwebTienda.Models.JGadornos>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.JGName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.JGnavideno)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.JGprice)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.JGName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.JGnavideno)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.JGprice)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.JGadornosId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.JGadornosId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.JGadornosId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

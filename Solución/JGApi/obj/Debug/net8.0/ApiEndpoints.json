@@ -1,0 +1,173 @@
+[
+  {
+    "ContainingType": "JGApi.Controllers.JgadornoEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapJgadornoEndpoints\u003Eb__0_0",
+    "RelativePath": "api/Jgadorno/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[JGApi.Data.Models.Jgadorno, JGApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Jgadorno"
+    ],
+    "EndpointName": "GetAllJgadornos"
+  },
+  {
+    "ContainingType": "JGApi.Controllers.JgadornoEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapJgadornoEndpoints\u003Eb__0_3",
+    "RelativePath": "api/Jgadorno/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "jgadorno",
+        "Type": "JGApi.Data.Models.Jgadorno",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JGApi.Data.Models.Jgadorno",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 201
+      }
+    ],
+    "Tags": [
+      "Jgadorno"
+    ],
+    "EndpointName": "CreateJgadorno"
+  },
+  {
+    "ContainingType": "JGApi.Controllers.JgadornoEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapJgadornoEndpoints\u003Eb__0_1",
+    "RelativePath": "api/Jgadorno/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "jgadornosid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JGApi.Data.Models.Jgadorno",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "Jgadorno"
+    ],
+    "EndpointName": "GetJgadornoById"
+  },
+  {
+    "ContainingType": "JGApi.Controllers.JgadornoEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapJgadornoEndpoints\u003Eb__0_2",
+    "RelativePath": "api/Jgadorno/{id}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "jgadornosid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "jgadorno",
+        "Type": "JGApi.Data.Models.Jgadorno",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "Jgadorno"
+    ],
+    "EndpointName": "UpdateJgadorno"
+  },
+  {
+    "ContainingType": "JGApi.Controllers.JgadornoEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapJgadornoEndpoints\u003Eb__0_4",
+    "RelativePath": "api/Jgadorno/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "jgadornosid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 404
+      }
+    ],
+    "Tags": [
+      "Jgadorno"
+    ],
+    "EndpointName": "DeleteJgadorno"
+  },
+  {
+    "ContainingType": "JGApi.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[JGApi.WeatherForecast, JGApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]
